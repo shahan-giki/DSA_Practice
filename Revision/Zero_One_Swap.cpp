@@ -18,7 +18,7 @@ void sortOne(int array[], int size){
         {
             right--;
         }
-
+        if(left<right){
         swap(array[left],array[right]);
         left++;
         right--;
@@ -26,11 +26,13 @@ void sortOne(int array[], int size){
     }
 }
 
+}
+
 int main(){
 
-    int Num[5]= {0,1,1,0,1};
-    sortOne(Num,5);
-    printArray(Num,5);
+    int Num[12]= {0,1,1,0,0,1,0,0,0,0,0,0};
+    sortOne(Num,12);
+    printArray(Num,12);
 
     return 0;
 }
